@@ -75,7 +75,7 @@ To install these dependencies for your project, do the following:
 2. Use `yarn` to install the Semaphore JavaScript libraries and the Hardhat plugin:
 
     ```bash
-    yarn add @semaphore-protocol/identity@2.6.1 @semaphore-protocol/group@2.6.1 @semaphore-protocol/proof@2.6.1 @semaphore-protocol/hardhat@0.1.0 --dev
+    yarn add @semaphore-protocol/identity@2.6.1 @semaphore-protocol/group@2.6.1 @saurabhchalke/proof@2.6.1 @semaphore-protocol/hardhat@0.1.0 --dev
     ```
 
 For more detail about _Semaphore contracts_, see [Contracts](https://docs.semaphore.pse.dev/technical-reference/contracts).
@@ -220,7 +220,7 @@ and [Chai assertions](https://www.chaijs.com/).
     ```javascript title="./test/Greeter.js"
     const { Identity } = require("@semaphore-protocol/identity")
     const { Group } = require("@semaphore-protocol/group")
-    const { generateProof, packToSolidityProof, verifyProof } = require("@semaphore-protocol/proof")
+    const { generateProof, packToSolidityProof, verifyProof } = require("@saurabhchalke/proof")
     const { expect } = require("chai")
     const { run, ethers } = require("hardhat")
 

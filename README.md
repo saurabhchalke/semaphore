@@ -135,7 +135,7 @@ The core of the Semaphore protocol is in the [circuit logic](/packages/circuits/
         <tr>
             <td>
                 <a href="/packages/proof">
-                    @semaphore-protocol/proof
+                    @saurabhchalke/proof
                 </a>
                 <a href="https://js.semaphore.pse.dev/modules/_semaphore_protocol_proof">
                     (docs)
@@ -143,14 +143,14 @@ The core of the Semaphore protocol is in the [circuit logic](/packages/circuits/
             </td>
             <td>
                 <!-- NPM version -->
-                <a href="https://npmjs.org/package/@semaphore-protocol/proof">
-                    <img src="https://img.shields.io/npm/v/@semaphore-protocol/proof.svg?style=flat-square" alt="NPM version" />
+                <a href="https://npmjs.org/package/@saurabhchalke/proof">
+                    <img src="https://img.shields.io/npm/v/@saurabhchalke/proof.svg?style=flat-square" alt="NPM version" />
                 </a>
             </td>
             <td>
                 <!-- Downloads -->
-                <a href="https://npmjs.org/package/@semaphore-protocol/proof">
-                    <img src="https://img.shields.io/npm/dm/@semaphore-protocol/proof.svg?style=flat-square" alt="Downloads" />
+                <a href="https://npmjs.org/package/@saurabhchalke/proof">
+                    <img src="https://img.shields.io/npm/dm/@saurabhchalke/proof.svg?style=flat-square" alt="Downloads" />
                 </a>
             </td>
         </tr>

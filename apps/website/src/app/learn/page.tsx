@@ -154,7 +154,7 @@ group.addMember(commitment)`,
                 "Semaphore group members can anonymously prove that they are part of a group and that they are generating their own proofs and signals.",
             linkText: "Generate Semaphore proofs",
             linkUrl: "https://docs.semaphore.pse.dev/guides/proofs",
-            codeText: `import { generateProof, verifyProof } from "@semaphore-protocol/proof"
+            codeText: `import { generateProof, verifyProof } from "@saurabhchalke/proof"
 import { utils } from "ethers"
 
 const externalNullifier = utils.formatBytes32String("Topic")

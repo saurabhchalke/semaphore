@@ -1,6 +1,6 @@
 import { Group } from "@semaphore-protocol/group"
 import { Identity } from "@semaphore-protocol/identity"
-import { generateProof } from "@semaphore-protocol/proof"
+import { generateProof } from "@saurabhchalke/proof"
 import { expect } from "chai"
 import { formatBytes32String } from "ethers/lib/utils"
 import { run } from "hardhat"

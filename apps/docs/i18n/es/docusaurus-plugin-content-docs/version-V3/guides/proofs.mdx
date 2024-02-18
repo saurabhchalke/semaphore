@@ -21,7 +21,7 @@ Las y los desarrolladores pueden utilizar Semaphore para realizar las siguientes
 
 ## Generar una prueba off-chain
 
-Utilice la librería [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) para generar una prueba off-chain.
+Utilice la librería [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) para generar una prueba off-chain.
 Para generar una prueba, transforme los siguientes parámetros con la función `generateProof`:
 
 -   `identity`: la identidad Semaphore del usuario emitiendo la señal y generando la prueba;
@@ -43,20 +43,20 @@ values={[
 <TabItem value="npm">
 
 ```bash
-npm install @semaphore-protocol/proof@^3
+npm install @saurabhchalke/proof@^3
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn add @semaphore-protocol/proof@^3
+yarn add @saurabhchalke/proof@^3
 ```
 </TabItem>
 <TabItem value="pnpm">
 
 ```bash
-pnpm add @semaphore-protocol/proof@^3
+pnpm add @saurabhchalke/proof@^3
 ```
 
 </TabItem>
@@ -69,7 +69,7 @@ En el llamado para `generateProof`(generar la prueba), el sistema de votación e
 La siguiente muestra de código demuestra cómo utilizar `generateProof` para generar una prueba de votación:
 
 ```ts
-import { generateProof } from "@semaphore-protocol/proof"
+import { generateProof } from "@saurabhchalke/proof"
 
 const externalNullifier = group.root
 const signal = 1
@@ -90,7 +90,7 @@ const fullProof = await generateProof(identity, group, externalNullifier, signal
 
 ## Verificar una prueba off-chain
 
-Utilice la librería [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) para verificar una prueba Semaphore off-chain.
+Utilice la librería [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) para verificar una prueba Semaphore off-chain.
 Para verificar una prueba, transforme los siguientes parámetros con la función `verifyProof`:
 
 -   `fullProof`: la prueba Semaphore;
@@ -99,7 +99,7 @@ Para verificar una prueba, transforme los siguientes parámetros con la función
 La siguiente muestra de código demuestra cómo verificar la prueba generada previamente:
 
 ```ts
-import { verifyProof } from "@semaphore-protocol/proof"
+import { verifyProof } from "@saurabhchalke/proof"
 
 await verifyProof(fullProof, 20) // verdadero o falso.
 ```

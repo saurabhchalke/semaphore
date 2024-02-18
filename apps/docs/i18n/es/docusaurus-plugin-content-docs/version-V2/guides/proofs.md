@@ -20,7 +20,7 @@ Developers can use Semaphore for the following:
 
 ## Generate a proof off-chain
 
-Use the [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/v2.6.1/packages/proof) library to generate an off-chain proof.
+Use the [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/v2.6.1/packages/proof) library to generate an off-chain proof.
 To generate a proof, pass the following properties to the `generateProof` function:
 
 -   `identity`: The Semaphore identity of the user broadcasting the signal and generating the proof.
@@ -36,7 +36,7 @@ In the call to `generateProof`, the voting system passes the unique ballot ID (t
 The following code sample shows how to use `generateProof` to generate the voting proof:
 
 ```ts
-import { generateProof } from "@semaphore-protocol/proof"
+import { generateProof } from "@saurabhchalke/proof"
 
 const externalNullifier = group.root
 const signal = "proposal_1"
@@ -49,7 +49,7 @@ const fullProof = await generateProof(identity, group, externalNullifier, signal
 
 ## Verify a proof off-chain
 
-Use the [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/v2.6.1/packages/proof) library to verify a Semaphore proof off-chain.
+Use the [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/v2.6.1/packages/proof) library to verify a Semaphore proof off-chain.
 To verify a proof, pass the following to the `verifyProof` function:
 
 -   _`proof`_: the Semaphore proof.
@@ -59,7 +59,7 @@ The following code sample shows how to parse the verification key object from `s
 and verify the previously generated proof:
 
 ```ts
-import { verifyProof } from "@semaphore-protocol/proof"
+import { verifyProof } from "@saurabhchalke/proof"
 
 const verificationKey = JSON.parse(fs.readFileSync("./semaphore.json", "utf-8"))
 
@@ -94,7 +94,7 @@ Alternatively, you can use an already deployed [`Semaphore`](https://github.com/
 To transform a proof to be compatible with Solidity contracts, pass the proof to the `packToSolidityProof` utility function--for example:
 
 ```ts
-import { packToSolidityProof } from "@semaphore-protocol/proof"
+import { packToSolidityProof } from "@saurabhchalke/proof"
 
 const solidityProof = packToSolidityProof(fullProof.proof)
 ```

@@ -21,7 +21,7 @@ Developers can use Semaphore for the following:
 
 ## Generate a proof off-chain
 
-Use the [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) library to generate an off-chain proof.
+Use the [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) library to generate an off-chain proof.
 To generate a proof, pass the following parameters to the `generateProof` function:
 
 -   `identity`: the Semaphore identity of the user broadcasting the signal and generating the proof;
@@ -43,21 +43,21 @@ values={[
 <TabItem value="npm">
 
 ```bash
-npm install @semaphore-protocol/proof@^3
+npm install @saurabhchalke/proof@^3
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn add @semaphore-protocol/proof@^3
+yarn add @saurabhchalke/proof@^3
 ```
 
 </TabItem>
 <TabItem value="pnpm">
 
 ```bash
-pnpm add @semaphore-protocol/proof@^3
+pnpm add @saurabhchalke/proof@^3
 ```
 
 </TabItem>
@@ -70,7 +70,7 @@ In the call to `generateProof`, the voting system passes the unique ballot ID (t
 The following code sample shows how to use `generateProof` to generate the voting proof:
 
 ```ts
-import { generateProof } from "@semaphore-protocol/proof"
+import { generateProof } from "@saurabhchalke/proof"
 
 const externalNullifier = group.root
 const signal = 1
@@ -91,7 +91,7 @@ const fullProof = await generateProof(identity, group, externalNullifier, signal
 
 ## Verify a proof off-chain
 
-Use the [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) library to verify a Semaphore proof off-chain.
+Use the [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/main/packages/proof) library to verify a Semaphore proof off-chain.
 To verify a proof, pass the following to the `verifyProof` function:
 
 -   `fullProof`: the Semaphore proof;
@@ -100,7 +100,7 @@ To verify a proof, pass the following to the `verifyProof` function:
 The following code sample shows how to verify the previously generated proof:
 
 ```ts
-import { verifyProof } from "@semaphore-protocol/proof"
+import { verifyProof } from "@saurabhchalke/proof"
 
 await verifyProof(fullProof, 20) // true or false.
 ```

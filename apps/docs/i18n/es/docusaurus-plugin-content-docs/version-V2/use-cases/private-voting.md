@@ -128,7 +128,7 @@ With a member registered for a poll, learn how the dApp [records votes](#record-
 Once members have joined a poll, the coordinator starts the poll to allow voting.
 When a member votes (for example, by selecting a radio button), then the dApp takes the following actions:
 
-1. Uses the `@semaphore-protocol/proof` library to create a proof of the vote, the poll identifier, the Semaphore ID, and a [nullifier](/glossary/#nullifier) that prevents double-voting.
+1. Uses the `@saurabhchalke/proof` library to create a proof of the vote, the poll identifier, the Semaphore ID, and a [nullifier](/glossary/#nullifier) that prevents double-voting.
 2. Sends the vote proof to the [relay](#relay).
 
 ### Related

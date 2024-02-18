@@ -1,7 +1,7 @@
 /* eslint-disable jest/valid-expect */
 import { Group } from "@semaphore-protocol/group"
 import { Identity } from "@semaphore-protocol/identity"
-import { SemaphoreProof, generateProof } from "@semaphore-protocol/proof"
+import { SemaphoreProof, generateProof } from "@saurabhchalke/proof"
 import { expect } from "chai"
 import { Signer, utils } from "ethers"
 import { ethers, run } from "hardhat"

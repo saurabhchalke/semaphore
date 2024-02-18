@@ -17,7 +17,7 @@ A unique [nullifier](/V4-alpha/glossary#nullifier) is also generated for each pr
 
 ## Install package
 
-In your code, use the [`@semaphore-protocol/proof`](https://github.com/semaphore-protocol/semaphore/tree/feat/semaphore-v4/packages/proof) package to generate and verify a proof.
+In your code, use the [`@saurabhchalke/proof`](https://github.com/semaphore-protocol/semaphore/tree/feat/semaphore-v4/packages/proof) package to generate and verify a proof.
 
 <Tabs
 defaultValue="npm"
@@ -30,21 +30,21 @@ values={[
 <TabItem value="npm">
 
 ```bash
-npm install @semaphore-protocol/proof
+npm install @saurabhchalke/proof
 ```
 
 </TabItem>
 <TabItem value="yarn">
 
 ```bash
-yarn add @semaphore-protocol/proof
+yarn add @saurabhchalke/proof
 ```
 
 </TabItem>
 <TabItem value="pnpm">
 
 ```bash
-pnpm add @semaphore-protocol/proof
+pnpm add @saurabhchalke/proof
 ```
 
 </TabItem>
@@ -83,7 +83,7 @@ Each proof requires a [scope](/V4-alpha/glossary#scope), on which each user may 
 Finally, you can generate the proof with the anonymous message using the `generateProof` function. For example:
 
 ```ts
-import { generateProof } from "@semaphore-protocol/proof"
+import { generateProof } from "@saurabhchalke/proof"
 
 const scope = group.root
 const message = 1
@@ -96,7 +96,7 @@ const proof = await generateProof(identity, group, externalNullifier, message)
 To verify a proof, pass the proof you generated to the `verifyProof` function. For example:
 
 ```ts
-import { verifyProof } from "@semaphore-protocol/proof"
+import { verifyProof } from "@saurabhchalke/proof"
 
 await verifyProof(proof) // true or false.
 ```
