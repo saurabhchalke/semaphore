@@ -1,6 +1,6 @@
 {
     "name": "@saurabhchalke/proof",
-    "version": "3.15.3",
+    "version": "3.15.31",
     "description": "A library to generate and verify Semaphore proofs.",
     "license": "MIT",
     "main": "dist/index.node.js",

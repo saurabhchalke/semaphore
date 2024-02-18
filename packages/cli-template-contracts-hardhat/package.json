@@ -36,7 +36,7 @@
         "@nomicfoundation/hardhat-toolbox": "^2.0.0",
         "@nomiclabs/hardhat-ethers": "^2.0.0",
         "@nomiclabs/hardhat-etherscan": "^3.0.0",
-        "@saurabhchalke/proof": "3.15.2",
+        "@saurabhchalke/proof": "3.15.31",
         "@semaphore-protocol/group": "3.15.2",
         "@semaphore-protocol/hardhat": "3.15.2",
         "@semaphore-protocol/identity": "3.15.2",
